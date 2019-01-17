@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TicTacToeClient.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="thepublicip" Type="System.String" Scope="User">
+      <Value Profile="(Default)">90.203.214.225</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

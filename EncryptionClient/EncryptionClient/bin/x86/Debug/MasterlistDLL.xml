@@ -1,0 +1,346 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MasterlistDLL</name>
+    </assembly>
+    <members>
+        <member name="T:MasterlistDLL.MasterlistServer">
+            <summary>
+            Class that can be used to easily communicate to the MasterList drawing server
+            </summary>
+        </member>
+        <member name="E:MasterlistDLL.MasterlistServer.RecieveMessage">
+            <summary>
+            Event raised when the masterlist sends a message to the server
+            </summary>
+        </member>
+        <member name="E:MasterlistDLL.MasterlistServer.LogMessage">
+            <summary>
+            Raised when a message needs to be logged
+            </summary>
+        </member>
+        <member name="P:MasterlistDLL.MasterlistServer.MASTERLIST_IP">
+            <summary>
+            Connection ip address for this server
+            </summary>
+        </member>
+        <member name="P:MasterlistDLL.MasterlistServer.MASTERLIST_PORT">
+            <summary>
+            Port used for masterlist communications
+            </summary>
+        </member>
+        <member name="P:MasterlistDLL.MasterlistServer.RUN_EXTERNALLY">
+            <summary>
+            Is the server running in a port-forwarded state? (can devices from the internet connect through firewall)
+            </summary>
+        </member>
+        <member name="P:MasterlistDLL.MasterlistServer.Enabled">
+            <summary>
+            Whether or not the server is successfully connected.
+            </summary>
+        </member>
+        <member name="P:MasterlistDLL.MasterlistServer.Server_Type">
+            <summary>
+            Type of the server, in discord, use "/masterlist games" to see a list, you want the 'ID' bit.
+            </summary>
+        </member>
+        <member name="M:MasterlistDLL.MasterlistServer.#ctor(System.Boolean,System.String)">
+            <summary>
+            Starts up the MasterList; will attempt to find a valid address to connect to the masterlist
+            </summary>
+            <param name="running_externally">Whether or not the server is open to connection from outside the network</param>
+            <param name="game_unique_identifier">The game's identifier</param>
+        </member>
+        <member name="M:MasterlistDLL.MasterlistServer.#ctor(System.Boolean,MasterlistDLL.MasterList_GameType)">
+            <summary>
+            Starts up the MasterList; will attempt to find a valid address to connect to the masterlist
+            </summary>
+            <param name="running_externally">Whether or not the server is open to connection from outside the network</param>
+            <param name="game_type">The game-type of the server</param>
+        </member>
+        <member name="P:MasterlistDLL.MasterlistServer.LastOperationDone">
+            <summary>
+            Last operation/message sent to server, this will not be accurate.
+            </summary>
+        </member>
+        <member name="P:MasterlistDLL.MasterlistServer.SERVER_IP">
+            <summary>
+            Gets server IP, if external, contacts https://icanhazip.com/ to get the external one.
+            </summary>
+        </member>
+        <member name="M:MasterlistDLL.MasterlistServer.SendMasterList(System.String)">
+            <summary>
+            Sends a message to the masterlist
+            </summary>
+        </member>
+        <member name="M:MasterlistDLL.MasterlistServer.HostServer(System.String,System.Guid,System.Boolean)">
+            <summary>
+            Hosts the server on the masterlist with the given info
+            </summary>
+            <param name="server_name">Unique name of the server</param>
+            <param name="unique_identifier">Unique GUID (I would advise storing this somewhere so it is consistent)</param>
+            <param name="password_protected">Whether the server is password protected. Defaults to false</param>
+        </member>
+        <member name="M:MasterlistDLL.MasterlistServer.Refresh">
+            <summary>
+            Sends a message to the masterlist to keep it online
+            </summary>
+        </member>
+        <member name="M:MasterlistDLL.MasterlistServer.Update(System.String,System.Int32,System.Boolean)">
+            <summary>
+            Updates any informational changes to the masterlist
+            </summary>
+            <param name="server_name">Please don't change the server name, I'm not sure if it will work</param>
+            <param name="player_count">Players now in the server</param>
+            <param name="password_protected">Whether the server is password protected. Defaults to false</param>
+        </member>
+        <member name="M:MasterlistDLL.MasterlistServer.AddScore(System.String)">
+            <summary>
+            Adds a score to the player's name - no abuse pls
+            </summary>
+            <param name="playerName">Should be able to identify a user</param>
+        </member>
+        <member name="T:MasterlistDLL.ReceiveMessageEventHandler">
+            <summary>
+            Event handler for when the masterlist recives a message
+            </summary>
+            <param name="sender">MasterlistServer class</param>
+            <param name="e"><see cref="T:MasterlistDLL.ReceiveMessageEventArgs"/>: Info about what was sent</param>
+        </member>
+        <member name="T:MasterlistDLL.ReceiveMessageEventArgs">
+            <summary>
+            Message is the message that was recieved;
+            <para>LastOperation is the last operation (eg, Refresh, AddScore etc) that was sent to the masterlist</para>
+            </summary>
+        </member>
+        <member name="F:MasterlistDLL.ReceiveMessageEventArgs.Message">
+            <summary>
+            Message that was sent by the masterlist
+            </summary>
+        </member>
+        <member name="F:MasterlistDLL.ReceiveMessageEventArgs.LastOperation">
+            <summary>
+            Last operation performed in to the masterlist
+            </summary>
+        </member>
+        <member name="M:MasterlistDLL.ReceiveMessageEventArgs.#ctor(System.String)">
+            <summary>
+            New object with string message
+            </summary>
+            <param name="message">Message sent by masterlist</param>
+        </member>
+        <member name="M:MasterlistDLL.ReceiveMessageEventArgs.#ctor(System.String,System.String)">
+            <summary>
+            New object with both message and lastoperation
+            </summary>
+            <param name="message"><see cref="F:MasterlistDLL.ReceiveMessageEventArgs.Message"/></param>
+            <param name="lastOperation"><see cref="F:MasterlistDLL.ReceiveMessageEventArgs.LastOperation"/></param>
+        </member>
+        <member name="T:MasterlistDLL.MasterListException">
+            <summary>
+            Intentional masterlist-related exception
+            </summary>
+        </member>
+        <member name="P:MasterlistDLL.MasterListException.InnerException">
+            <summary>
+            Exception that caused masterlist to close
+            </summary>
+        </member>
+        <member name="M:MasterlistDLL.MasterListException.#ctor">
+            <summary>
+            Emptry exception class
+            </summary>
+        </member>
+        <member name="M:MasterlistDLL.MasterListException.#ctor(System.Exception)">
+            <summary>
+            Exception with the inner exception specified
+            </summary>
+        </member>
+        <member name="M:MasterlistDLL.MasterListException.#ctor(System.String)">
+            <summary>
+            Exception with a string error
+            </summary>
+        </member>
+        <member name="T:MasterlistDLL.MasterList_GameType">
+            <summary>
+            Easy access to some official versions; these will be converted to their actual IDs 
+            </summary>
+        </member>
+        <member name="F:MasterlistDLL.MasterList_GameType.Abdul_TicTacToe">
+            <summary>
+            Converted to: 'abdul-ttt'
+            </summary>
+        </member>
+        <member name="F:MasterlistDLL.MasterList_GameType.Drawing">
+            <summary>
+            Converted to: 'drawing'
+            </summary>
+        </member>
+        <member name="F:MasterlistDLL.MasterList_GameType.Alex_ChatServer">
+            <summary>
+            Converted to: 'alex-chat'
+            </summary>
+        </member>
+        <member name="T:MasterlistDLL.ClientDisplayServer">
+            <summary>
+            Wrapper class for easy access to a server's information
+            </summary>
+        </member>
+        <member name="F:MasterlistDLL.ClientDisplayServer.ServerName">
+            <summary>
+            Name of the server
+            </summary>
+        </member>
+        <member name="F:MasterlistDLL.ClientDisplayServer.IPAddress">
+            <summary>
+            Ip address to connect to
+            </summary>
+        </member>
+        <member name="F:MasterlistDLL.ClientDisplayServer.IPv6Address">
+            <summary>
+            IPv6 address for the server
+            </summary>
+        </member>
+        <member name="F:MasterlistDLL.ClientDisplayServer.PlayersOnline">
+            <summary>
+            How many players are online
+            </summary>
+        </member>
+        <member name="F:MasterlistDLL.ClientDisplayServer.IsPasswordProtected">
+            <summary>
+            Is the server password protected
+            </summary>
+            <remarks>
+            Note that not all server types can be password protected, in that case, it defaults to False.
+            </remarks>
+        </member>
+        <member name="M:MasterlistDLL.ClientDisplayServer.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Creates a new ClientDisplayServer object.
+            </summary>
+            <param name="name">Name of the server</param>
+            <param name="ip">IP address of the server</param>
+            <param name="players">Number of players</param>
+            <param name="passworded">Is password protected</param>
+        </member>
+        <member name="M:MasterlistDLL.ClientDisplayServer.ToString">
+            <summary>
+            Returns object in a readable format, including all information
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MasterlistDLL.ServerJoinResponse">
+            <summary>
+            Response for a request via Guid.
+            </summary>
+        </member>
+        <member name="F:MasterlistDLL.ServerJoinResponse.ServerName">
+            <summary>
+            Name of server.
+            </summary>
+        </member>
+        <member name="F:MasterlistDLL.ServerJoinResponse.ConnectionIP">
+            <summary>
+            First IP for connection
+            </summary>
+        </member>
+        <member name="F:MasterlistDLL.ServerJoinResponse.ConnectionAlternateIP">
+            <summary>
+            Alternate, possibly identical, IP for connection.
+            </summary>
+        </member>
+        <member name="F:MasterlistDLL.ServerJoinResponse.PlayerCount">
+            <summary>
+            Number of players.
+            </summary>
+        </member>
+        <member name="T:MasterlistDLL.ClientDisplayLeaderBoard">
+            <summary>
+            Class for easier access and formatting of the leaderboard
+            </summary>
+        </member>
+        <member name="F:MasterlistDLL.ClientDisplayLeaderBoard.PlayerName">
+            <summary>
+            Player's account name
+            </summary>
+            <remarks>
+            May end up adding an alias system, so this is volatile and subject to change
+            </remarks>
+        </member>
+        <member name="F:MasterlistDLL.ClientDisplayLeaderBoard.Score">
+            <summary>
+            Player's score
+            </summary>
+        </member>
+        <member name="M:MasterlistDLL.ClientDisplayLeaderBoard.#ctor(System.String,System.String)">
+            <summary>
+            Creates a new DisplayLeaderboard from the given name and score
+            </summary>
+        </member>
+        <member name="M:MasterlistDLL.ClientDisplayLeaderBoard.ToString">
+            <summary>
+            Returns in the format "{PlayerName} = {Score}"
+            </summary>
+        </member>
+        <member name="T:MasterlistDLL.MasterListClient">
+            <summary>
+            Static class for interactions on behalf of a client
+            </summary>
+        </member>
+        <member name="P:MasterlistDLL.MasterListClient.MasterListIsOnline">
+            <summary>
+            Is/Was the masterlist online when we first attempted to contact it?
+            </summary>
+        </member>
+        <member name="M:MasterlistDLL.MasterListClient.GetServers(System.String)">
+            <summary>
+            Gets all of the servers online with the given type
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MasterlistDLL.MasterListClient.GetLeaderBoard">
+            <summary>
+            Gets the leaderboard in a ready-to-use format
+            </summary>
+        </member>
+        <member name="M:MasterlistDLL.MasterListClient.GetJoinInfo(System.Guid)">
+            <summary>
+            Returns nessecary information to connect to the specified server; as identified by its GUID.
+            </summary>
+            <param name="server">Unique identifier of the server</param>
+            <returns>Name, IP and AltIP and PlayerCount</returns>
+        </member>
+        <member name="T:MasterlistDLL.DLL">
+            <summary>
+            Class to access things related to the DLL file itself
+            </summary>
+        </member>
+        <member name="P:MasterlistDLL.DLL.GetDLLVersion">
+            <summary>
+            The assembly version of the DLL
+            </summary>
+        </member>
+        <member name="T:MasterlistDLL.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:MasterlistDLL.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:MasterlistDLL.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:MasterlistDLL.Properties.Resources.Newtonsoft_Json">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+    </members>
+</doc>
