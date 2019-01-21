@@ -1,0 +1,6 @@
+12:01:57.512: Connected to 127.0.0.1
+12:01:57.517: [Sent]: shaabd14
+12:01:58.802: [Sent]: S
+12:01:58.809: [Rec]: You:Abdul
+12:01:58.813: [Rec]: Spectator
+12:02:01.033: [Sent]: LEFT

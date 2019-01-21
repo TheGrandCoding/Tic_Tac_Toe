@@ -1,0 +1,31 @@
+12:01:48.332: Connected to 127.0.0.1
+12:01:48.339: [Sent]: shaabd14
+12:01:51.996: [Sent]: S
+12:01:51.999: [Rec]: You:Abdul
+12:01:52.020: [Rec]: Spectator
+12:01:57.000: [Rec]: Test
+12:02:02.000: [Rec]: Test
+12:02:07.009: [Rec]: Test
+12:02:10.871: [Rec]: Message#Tournament started
+12:02:12.010: [Rec]: Test
+12:02:13.383: [Rec]: Game:~Abdul~BOT~1~1
+12:02:15.823: [Sent(S)]: Selected:Abdul~BOT~1~1
+12:02:15.830: [Rec]: Info/-----X---/N:BOT:Abdul:F
+12:02:17.025: [Rec]: Test
+12:02:17.623: [Rec]: Info/O----X---/C:BOT:Abdul:F
+12:02:20.128: [Rec]: Info/O----XX--/N:BOT:Abdul:F
+12:02:21.895: [Rec]: Info/O----XX-O/C:BOT:Abdul:F
+12:02:22.025: [Rec]: Test
+12:02:24.398: [Rec]: Info/O---XXX-O/N:BOT:Abdul:F
+12:02:27.040: [Rec]: Test
+12:02:32.040: [Rec]: Test
+12:02:33.700: [Rec]: Info/O--OXXX-O/C:BOT:Abdul:F
+12:02:36.206: [Rec]: Info/O-XOXXX-O/N:BOT:Abdul:F
+12:02:36.259: [Rec]: Message#Round 1 Game 1: BOT beat Abdul
+12:02:36.313: [Rec]: Message#Tournament has ended (No players left)
+12:02:36.367: [Rec]: Info/O-XOXXX-O/N:BOT:Abdul:C
+12:02:37.041: [Rec]: Test
+12:02:42.042: [Rec]: Test
+12:02:47.058: [Rec]: Test
+12:02:52.074: [Rec]: Test
+12:02:56.461: [Sent]: LEFT

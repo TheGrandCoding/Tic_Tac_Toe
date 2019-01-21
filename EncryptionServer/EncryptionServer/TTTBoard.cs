@@ -157,7 +157,6 @@ namespace TicTacToeServer
                 {
                     Info += convertToLetter(Board[row, col]).Replace("  ", "-");
                 }
-                Info += "_";
             }
             return Info;
         }

@@ -1,0 +1,11 @@
+11:58:42.188: Connected to 127.0.0.1
+11:58:42.196: [Sent]: shaabd14
+11:58:43.798: [Sent]: S
+11:58:43.801: [Rec]: You:Abdul
+11:58:43.807: [Rec]: Spectator
+11:58:43.815: [Rec]: Game:~Abdul~BOT~1~1
+11:58:43.872: [Rec]: Message#Tournament started
+11:58:43.926: [Rec]: Message#Round 1 Game 1: Abdul beat BOT
+11:58:43.978: [Rec]: Message#Abdul won the tournament
+11:58:45.337: [Sent(S)]: Selected:Abdul~BOT~1~1
+11:58:45.344: [Rec]: Info/OX-_OOX_O-X_/C:BOT:Abdul:N

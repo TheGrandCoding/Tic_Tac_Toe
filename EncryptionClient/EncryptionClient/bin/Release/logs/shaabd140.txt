@@ -1,0 +1,30 @@
+11:57:23.920: Connected to 127.0.0.1
+11:57:23.929: [Sent]: shaabd14
+11:57:23.933: [Sent]: P
+11:57:23.938: [Rec]: YOU:Abdul
+11:57:28.946: [Rec]: Test
+11:57:32.679: [Rec]: OPP:BOT
+11:57:32.683: [Rec]: Nought
+11:57:32.700: [Sent]: BreakSpectator
+11:57:35.191: [Rec]: POS:B2
+11:57:36.042: [Sent]: POS:A3
+11:57:38.549: [Rec]: POS:A1
+11:57:41.219: [Sent]: POS:C3
+11:57:43.737: [Rec]: POS:B3
+11:57:44.285: [Sent]: POS:B1
+11:57:46.808: [Rec]: POS:A2
+11:57:49.653: [Sent]: POS:C2
+11:57:52.164: [Rec]: POS:C1
+11:57:52.171: [Rec]: draw
+11:57:52.177: [Rec]: True
+11:57:53.509: [Sent]: POS:A1
+11:57:56.023: [Rec]: POS:C3
+11:57:59.110: [Sent]: POS:B2
+11:58:01.624: [Rec]: POS:A2
+11:58:04.933: [Sent]: POS:B1
+11:58:07.477: [Rec]: POS:B3
+11:58:08.302: [Sent]: POS:C1
+11:58:08.316: [Rec]: You win
+11:58:09.322: [Sent]: ready
+11:58:09.325: [Rec]: You won the tournament
+11:58:11.198: [Sent]: LEFT

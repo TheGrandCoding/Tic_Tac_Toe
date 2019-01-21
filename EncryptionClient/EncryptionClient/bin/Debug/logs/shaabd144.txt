@@ -1,0 +1,25 @@
+12:02:02.300: Connected to 127.0.0.1
+12:02:02.306: [Sent]: shaabd14
+12:02:04.590: [Sent]: P
+12:02:04.594: [Rec]: YOU:Abdul
+12:02:10.876: [Rec]: OPP:BOT
+12:02:10.878: [Rec]: Nought
+12:02:10.893: [Sent]: BreakSpectator
+12:02:13.382: [Rec]: POS:B3
+12:02:17.622: [Sent]: POS:A1
+12:02:20.128: [Rec]: POS:C1
+12:02:21.894: [Sent]: POS:C3
+12:02:24.398: [Rec]: POS:B2
+12:02:33.695: [Sent]: POS:B1
+12:02:36.206: [Rec]: POS:A3
+12:02:36.212: [Rec]: You lose
+12:02:42.165: [Sent]: TSpectator
+12:02:42.168: [Rec]: You:Abdul
+12:02:42.172: [Rec]: Spectator
+12:02:42.177: [Rec]: Game:~Abdul~BOT~1~1
+12:02:42.230: [Rec]: Message#Tournament started
+12:02:42.283: [Rec]: Message#Round 1 Game 1: BOT beat Abdul
+12:02:42.336: [Rec]: Message#Tournament has ended (No players left)
+12:02:43.492: [Sent(S)]: Selected:Abdul~BOT~1~1
+12:02:43.495: [Rec]: Info/O-XOXXX-O/N:BOT:Abdul:C
+12:02:50.685: [Sent]: LEFT
