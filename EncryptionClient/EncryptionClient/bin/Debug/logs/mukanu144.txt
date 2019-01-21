@@ -1,0 +1,43 @@
+02:32:57.038: Connected to 127.0.0.1
+02:32:57.057: [Sent]: mukanu14
+02:32:58.294: [Sent]: P
+02:32:58.297: [Rec]: YOU:Anu$han3
+02:33:03.302: [Rec]: Test
+02:33:08.311: [Rec]: Test
+02:33:13.320: [Rec]: Test
+02:33:18.329: [Rec]: Test
+02:33:23.337: [Rec]: Test
+02:33:28.338: [Rec]: Test
+02:33:32.879: [Rec]: OPP:Anu$han
+02:33:32.882: [Rec]: NoughtTrue
+02:33:32.899: [Sent]: BreakSpectator
+02:34:02.890: [Rec]: Times Up
+02:34:02.894: [Sent]: POS:A2
+02:34:14.231: [Rec]: POS:B2
+02:34:17.015: [Sent]: POS:B1
+02:34:19.134: [Rec]: POS:A3
+02:34:20.726: [Sent]: POS:C1
+02:34:22.351: [Rec]: POS:B3
+02:34:24.159: [Sent]: POS:A1
+02:34:24.162: [Rec]: You win
+02:34:25.472: [Sent]: ready
+02:34:26.492: [Rec]: OPP:Anu$han2
+02:34:26.496: [Rec]: Nought
+02:34:26.509: [Sent]: BreakSpectator
+02:34:56.508: [Rec]: POS:C1
+02:35:03.676: [Sent]: POS:B2
+02:35:06.380: [Rec]: POS:C2
+02:35:16.131: [Sent]: POS:B1
+02:35:17.963: [Rec]: POS:C3
+02:35:17.972: [Rec]: You lose
+02:35:22.365: [Rec]: You:Anu$han3
+02:35:22.368: [Sent]: TSpectator
+02:35:22.374: [Rec]: Spectator
+02:35:22.386: [Rec]: Game:~Anu$han3~Anu$han~1~1
+02:35:22.464: [Rec]: Game:~Anu$han3~Anu$han2~2~1
+02:35:22.516: [Rec]: Message#Tournament started
+02:35:22.568: [Rec]: Message#Round 1 Game 1: Anu$han3 beat Anu$han
+02:35:22.620: [Rec]: Message#Round 2 Started
+02:35:22.672: [Rec]: Message#Round 2 Game 1: Anu$han2 beat Anu$han3
+02:35:22.724: [Rec]: Message#Anu$han2 won the tournament
+02:35:59.378: [Sent]: LEFT

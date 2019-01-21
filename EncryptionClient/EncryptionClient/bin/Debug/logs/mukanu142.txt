@@ -1,0 +1,63 @@
+02:31:02.222: Connected to 127.0.0.1
+02:31:02.241: [Sent]: mukanu14
+02:31:06.694: [Sent]: P
+02:31:06.703: [Rec]: YOU:Anu$han
+02:31:11.697: [Rec]: Test
+02:31:16.696: [Rec]: Test
+02:31:21.704: [Rec]: Test
+02:31:26.712: [Rec]: Test
+02:31:31.720: [Rec]: Test
+02:31:36.728: [Rec]: Test
+02:31:41.736: [Rec]: Test
+02:31:46.744: [Rec]: Test
+02:31:51.752: [Rec]: Test
+02:31:56.760: [Rec]: Test
+02:32:01.768: [Rec]: Test
+02:32:06.768: [Rec]: Test
+02:32:11.776: [Rec]: Test
+02:32:16.784: [Rec]: Test
+02:32:21.792: [Rec]: Test
+02:32:26.800: [Rec]: Test
+02:32:31.808: [Rec]: Test
+02:32:36.817: [Rec]: Test
+02:32:41.824: [Rec]: Test
+02:32:46.832: [Rec]: Test
+02:32:51.840: [Rec]: Test
+02:32:56.850: [Rec]: Test
+02:33:01.851: [Rec]: Test
+02:33:06.859: [Rec]: Test
+02:33:11.867: [Rec]: Test
+02:33:16.877: [Rec]: Test
+02:33:21.885: [Rec]: Test
+02:33:26.887: [Rec]: Test
+02:33:31.894: [Rec]: Test
+02:33:32.879: [Rec]: OPP:Anu$han3
+02:33:32.881: [Rec]: cross
+02:33:32.900: [Sent]: BreakSpectator
+02:34:02.895: [Rec]: POS:A2
+02:34:14.230: [Sent]: POS:B2
+02:34:17.015: [Rec]: POS:B1
+02:34:19.134: [Sent]: POS:A3
+02:34:20.727: [Rec]: POS:C1
+02:34:22.350: [Sent]: POS:B3
+02:34:24.159: [Rec]: POS:A1
+02:34:24.166: [Rec]: You lose
+02:34:28.127: [Sent]: TSpectator
+02:34:28.129: [Rec]: You:Anu$han
+02:34:28.131: [Rec]: Spectator
+02:34:28.136: [Rec]: Game:~Anu$han3~Anu$han~1~1
+02:34:28.189: [Rec]: Game:~Anu$han3~Anu$han2~2~1
+02:34:28.246: [Rec]: Message#Tournament started
+02:34:28.298: [Rec]: Message#Round 1 Game 1: Anu$han3 beat Anu$han
+02:34:28.351: [Rec]: Message#Round 2 Started
+02:34:34.614: [Sent(S)]: Selected:Anu$han3~Anu$han2~2~1
+02:34:34.618: [Rec]: Info/---------/C:Anu$han2:Anu$han3:F
+02:34:56.508: [Rec]: Info/------X--/N:Anu$han2:Anu$han3:F
+02:35:03.676: [Rec]: Info/----O-X--/C:Anu$han2:Anu$han3:F
+02:35:06.380: [Rec]: Info/----O-XX-/N:Anu$han2:Anu$han3:F
+02:35:16.131: [Rec]: Info/---OO-XX-/C:Anu$han2:Anu$han3:F
+02:35:17.963: [Rec]: Info/---OO-XXX/N:Anu$han2:Anu$han3:F
+02:35:18.023: [Rec]: Message#Round 2 Game 1: Anu$han2 beat Anu$han3
+02:35:18.075: [Rec]: Info/---OO-XXX/N:Anu$han2:Anu$han3:C
+02:35:19.356: [Rec]: Message#Anu$han2 won the tournament
+02:36:04.602: [Sent]: LEFT

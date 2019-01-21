@@ -1,0 +1,41 @@
+02:32:32.368: Connected to 127.0.0.1
+02:32:32.387: [Sent]: mukanu14
+02:32:43.143: [Sent]: P
+02:32:43.145: [Rec]: YOU:Anu$han2
+02:32:48.143: [Rec]: Test
+02:32:53.151: [Rec]: Test
+02:32:58.154: [Rec]: Test
+02:33:03.161: [Rec]: Test
+02:33:08.169: [Rec]: Test
+02:33:13.178: [Rec]: Test
+02:33:18.187: [Rec]: Test
+02:33:23.203: [Rec]: Test
+02:33:28.197: [Rec]: Test
+02:33:32.873: [Rec]: Wait
+02:33:58.328: [Rec]: Spectator
+02:33:58.334: [Rec]: Message#Tournament started
+02:33:58.387: [Rec]: Game:~Anu$han3~Anu$han~1~1
+02:34:11.663: [Sent(S)]: Selected:Anu$han3~Anu$han~1~1
+02:34:11.672: [Rec]: Info/-O-------/C:Anu$han:Anu$han3:F
+02:34:14.231: [Rec]: Info/-O--X----/N:Anu$han:Anu$han3:F
+02:34:17.015: [Rec]: Info/-O-OX----/C:Anu$han:Anu$han3:F
+02:34:19.134: [Rec]: Info/-OXOX----/N:Anu$han:Anu$han3:F
+02:34:20.727: [Rec]: Info/-OXOX-O--/C:Anu$han:Anu$han3:F
+02:34:22.351: [Rec]: Info/-OXOXXO--/N:Anu$han:Anu$han3:F
+02:34:24.159: [Rec]: Info/OOXOXXO--/C:Anu$han:Anu$han3:F
+02:34:24.212: [Rec]: Message#Round 1 Game 1: Anu$han3 beat Anu$han
+02:34:24.265: [Rec]: Info/OOXOXXO--/C:Anu$han:Anu$han3:N
+02:34:25.478: [Rec]: Message#Round 2 Started
+02:34:26.492: [Rec]: OPP:Anu$han3
+02:34:26.497: [Rec]: CrossTrue
+02:34:26.509: [Sent]: BreakSpectator
+02:34:56.504: [Rec]: Times Up
+02:34:56.507: [Sent]: POS:C1
+02:35:03.676: [Rec]: POS:B2
+02:35:06.379: [Sent]: POS:C2
+02:35:16.131: [Rec]: POS:B1
+02:35:17.963: [Sent]: POS:C3
+02:35:17.965: [Rec]: You win
+02:35:19.355: [Sent]: ready
+02:35:19.357: [Rec]: You won the tournament
+02:35:52.059: [Sent]: LEFT

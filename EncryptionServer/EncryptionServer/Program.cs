@@ -678,13 +678,13 @@ namespace TicTacToeServer
         public static Dictionary<string, string> DictNames = new Dictionary<string, string>()
         {
             {"Abdul","Abdul"},//home
-            { "tomal","Tom"},
+            {"tomal","Tom"},
             {"alexchester","Alex"},
-            {"anush" , "Anushan"},
+            {"anush" , "Anu$han"},
             {"shaabd14", "Abdul"},//school
             {"cheale14","Alex" },
             {"manami14","Amir"},
-            {"mukanu14","Anushan"},
+            {"mukanu14","Anu$han"},
             {"pavben14","Ben"},
             {"bakmoh14","Borhan"},
             {"sedcha14","Charlie"},
